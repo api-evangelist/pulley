@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "aid": "https://apis.io/aid",
+    "pulley": "https://pulley.com/vocab/",
+    "capTable": "pulley:capTable",
+    "equityGrant": "pulley:equityGrant",
+    "optionPool": "pulley:optionPool",
+    "vestingSchedule": "pulley:vestingSchedule",
+    "stakeholder": "pulley:stakeholder",
+    "safeNote": "pulley:safeNote",
+    "convertibleNote": "pulley:convertibleNote",
+    "tokenCapTable": "pulley:tokenCapTable",
+    "valuation409A": "pulley:valuation409A",
+    "rsu": "pulley:rsu",
+    "dilutionModel": "pulley:dilutionModel",
+    "investorReport": "pulley:investorReport",
+    "complianceReport": "pulley:complianceReport",
+    "hrisIntegration": "pulley:hrisIntegration",
+    "custodianIntegration": "pulley:custodianIntegration",
+    "Organization": "Organization",
+    "SoftwareApplication": "SoftwareApplication",
+    "WebAPI": "WebAPI",
+    "provider": "provider",
+    "documentation": "documentation",
+    "termsOfService": "termsOfService",
+    "softwareVersion": "softwareVersion"
+  },
+  "@type": "WebAPI",
+  "@id": "https://api.pulley.com",
+  "name": "Pulley API",
+  "description": "REST API for programmatic management of cap table data including stakeholders, equity grants, option pools, convertible instruments, vesting schedules, and investor reporting.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Pulley",
+    "url": "https://pulley.com",
+    "sameAs": [
+      "https://x.com/pulleyapp",
+      "https://www.linkedin.com/company/pulley-cap-table",
+      "https://github.com/pulley"
+    ]
+  },
+  "documentation": "https://pulley.com/",
+  "termsOfService": "https://pulley.com/",
+  "applicationCategory": "FinancialSoftware",
+  "keywords": [
+    "cap table",
+    "equity management",
+    "options",
+    "RSUs",
+    "SAFEs",
+    "convertible notes",
+    "409A valuation",
+    "vesting schedules",
+    "token cap table",
+    "startup finance",
+    "investor reporting"
+  ]
+}
