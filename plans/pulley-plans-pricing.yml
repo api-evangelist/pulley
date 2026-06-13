@@ -1,0 +1,96 @@
+name: Pulley Plans and Pricing
+description: Pricing tiers for Pulley cap table management platform covering equity
+  management and token cap table products for startups and finance teams.
+version: '0.1'
+url: https://pulley.com/pricing
+plans:
+  - name: Startup
+    description: Entry-level plan for early-stage companies managing equity and cap
+      tables with up to 25 stakeholders.
+    price: '$1,200/year'
+    currency: USD
+    billingCycle: annual
+    stakeholders: 25
+    features:
+      - Cap table management
+      - Share certificates
+      - SAFE, option, and RSA agreement templates
+      - Fundraise modeling
+      - Interactive offer letters
+      - Communications hub
+      - Concierge onboarding
+    notes: Angel investors writing checks for $50,000 or less count as half a stakeholder.
+
+  - name: Growth
+    description: Mid-tier plan for growing companies needing 409A valuations, HRIS
+      integrations, and compliance features.
+    price: '$3,500/year'
+    currency: USD
+    billingCycle: annual
+    stakeholders: 40
+    features:
+      - All Startup features
+      - 409A valuations
+      - Custom agreements
+      - Option exercises
+      - Rule 701 compliance
+      - Form 3921 generation
+      - Board approvals
+      - HRIS integrations (Rippling, Gusto, BambooHR, Workday)
+    notes: Includes 3-day 409A turnaround with audit support.
+
+  - name: Enterprise
+    description: Modular enterprise plan for mature companies with complex equity
+      programs requiring stock-based compensation reporting and managed administration.
+    price: Contact for pricing
+    currency: USD
+    billingCycle: annual
+    stakeholders: Custom
+    features:
+      - All Growth features
+      - Stock-based compensation reporting (ASC 718)
+      - Custom reporting
+      - Managed administration
+      - Secondary liquidity solutions via Nasdaq Private Markets
+    notes: Contact Pulley sales for custom stakeholder limits and pricing.
+
+  - name: Token Cap Table
+    description: Crypto and token cap table management for Web3 companies tracking
+      token agreements, vesting, and multi-chain ownership.
+    price: '$4,500/year'
+    currency: USD
+    billingCycle: annual
+    stakeholders: 25
+    features:
+      - Automate vesting schedules
+      - Track token agreements
+      - Analytics and reporting
+      - Multi-chain support
+      - 83(b) election tracking
+    notes: Designed for crypto projects managing token distribution.
+
+  - name: Distributions
+    description: Token distribution plan for managing custodian and multi-sig integrations,
+      tax automation, and non-custodial distributions.
+    price: '$4,500/year'
+    currency: USD
+    billingCycle: annual
+    stakeholders: 25
+    features:
+      - Custodian and multi-sig integration (Coinbase Prime, Fireblocks, BitGo)
+      - Tax automation
+      - Non-custodial design
+      - Admin approval controls
+      - Immutable audit trails
+
+  - name: Valuations
+    description: Standalone 409A valuation service for companies needing audit-ready
+      valuation reports.
+    price: Starting at $10,000
+    currency: USD
+    billingCycle: one-time
+    features:
+      - Single valuation included
+      - 2-3 day turnaround
+      - Audit-ready reports
+      - 15% bundle discount available when combined with equity plans

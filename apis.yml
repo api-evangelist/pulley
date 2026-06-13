@@ -1,0 +1,71 @@
+aid: pulley
+name: Pulley
+description: Cap table management platform for startups and finance leaders, providing
+  a REST API for managing equity, modeling dilution, issuing options and RSUs, tracking
+  SAFEs and convertible instruments, and generating investor and compliance reports.
+  Pulley supports both equity and token cap tables with integrations to leading HRIS
+  platforms, custodians, and legal tools.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/pulley/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Cap Table
+  - Equity Management
+  - Startups
+  - Options
+  - RSUs
+  - SAFEs
+  - 409A Valuations
+  - Token Cap Table
+  - Fintech
+apis:
+  - aid: pulley:pulley-api
+    name: Pulley API
+    description: REST API for programmatic management of cap table data including
+      stakeholders, equity grants, option pools, convertible instruments, vesting
+      schedules, and investor reporting. Used by integrations with HRIS platforms
+      (Rippling, Gusto, BambooHR, Workday) and custodians (Coinbase Prime, Fireblocks,
+      BitGo).
+    humanURL: https://pulley.com/
+    baseURL: https://api.pulley.com
+    tags:
+      - Cap Table
+      - Equity
+      - Options
+      - RSUs
+      - Vesting
+      - Investors
+    properties:
+      - type: Documentation
+        url: https://pulley.com/
+      - type: Website
+        url: https://pulley.com/
+common:
+  - type: Website
+    url: https://pulley.com/
+  - type: Documentation
+    url: https://pulley.com/
+  - type: GitHubOrg
+    url: https://github.com/pulley
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/pulley-cap-table
+  - type: Blog
+    url: https://pulley.com/blog
+  - type: Pricing
+    url: https://pulley.com/pricing
+  - type: StatusPage
+    url: https://status.pulley.com
+  - type: X
+    url: https://x.com/pulleyapp
+  - type: Plans
+    url: plans/pulley-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/pulley-rate-limits.yml
+  - type: FinOps
+    url: finops/pulley-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,43 @@
+name: Pulley API Rate Limits
+description: Rate limiting policies for the Pulley REST API. Pulley provides API
+  access primarily through integrations with HRIS platforms and custodians. Specific
+  published rate limits are not publicly documented; the following represents known
+  practices based on available information.
+version: '0.1'
+url: https://pulley.com/
+notes: >
+  Pulley's public API documentation is limited. Rate limit details are not
+  publicly published as of June 2026. Integrations with HRIS platforms such as
+  Rippling, Gusto, BambooHR, and Workday operate via one-way sync from HR
+  systems to Pulley. Custodian integrations (Coinbase Prime, Fireblocks, BitGo)
+  use API key-based authentication with platform-defined limits. Developers
+  should contact Pulley support for specific rate limit guidance.
+limits:
+  - scope: API (general)
+    type: requests
+    window: unknown
+    limit: not publicly documented
+    notes: Contact Pulley at help.pulley.com for current rate limit information.
+
+  - scope: HRIS integrations
+    type: sync
+    window: periodic
+    limit: one-way sync; frequency determined by HRIS provider
+    notes: >
+      Integrations with Rippling, Gusto, BambooHR, and Workday are one-way
+      syncs from HR system to Pulley. Changes made in Pulley do not propagate
+      back to the HR system.
+
+  - scope: Custodian integrations
+    type: API key
+    window: varies by custodian
+    limit: governed by custodian platform limits
+    notes: >
+      Connections to Coinbase Prime, Fireblocks, and BitGo require API key
+      setup per custodian. Rate limits are governed by each custodian's own
+      policies.
+authentication:
+  - type: API Key
+    notes: Used for custodian integrations (Coinbase Prime, Fireblocks, BitGo).
+  - type: OAuth / Account Link
+    notes: Used for native HRIS integrations (Rippling, Gusto, BambooHR, Workday).

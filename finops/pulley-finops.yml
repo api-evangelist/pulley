@@ -1,0 +1,98 @@
+name: Pulley FinOps Framework
+description: FinOps FOCUS-aligned cost and usage framework for Pulley cap table
+  management platform, covering equity plan pricing, stakeholder-based billing,
+  and token platform costs.
+version: '1.0'
+url: https://pulley.com/pricing
+framework: FinOps FOCUS 1.0
+
+billingModel:
+  type: subscription
+  cycle: annual
+  currency: USD
+  notes: >
+    Pulley uses annual subscription pricing with stakeholder-based tiers.
+    Angel investors writing checks for $50,000 or less count as half a stakeholder.
+    Enterprise pricing is custom and negotiated directly with Pulley sales.
+
+costCategories:
+  - category: Equity Cap Table Management
+    description: Core annual subscription for managing equity cap tables for startups
+      and growth companies.
+    skus:
+      - name: Startup Plan
+        price: 1200.00
+        unit: year
+        includedStakeholders: 25
+        overage: contact Pulley for overage pricing
+      - name: Growth Plan
+        price: 3500.00
+        unit: year
+        includedStakeholders: 40
+        overage: contact Pulley for overage pricing
+      - name: Enterprise Plan
+        price: custom
+        unit: year
+        includedStakeholders: custom
+        overage: negotiated
+
+  - category: Token and Crypto Cap Table
+    description: Annual subscriptions for token cap table management, vesting automation,
+      and multi-chain distribution.
+    skus:
+      - name: Token Cap Table Plan
+        price: 4500.00
+        unit: year
+        includedStakeholders: 25
+      - name: Distributions Plan
+        price: 4500.00
+        unit: year
+        includedStakeholders: 25
+
+  - category: Valuations
+    description: Standalone 409A valuation services billed per valuation engagement.
+    skus:
+      - name: 409A Valuation
+        price: 10000.00
+        unit: valuation
+        notes: Starting price; bundle discount of 15% available when combined with
+          an equity plan subscription.
+
+costDrivers:
+  - name: Stakeholder Count
+    description: Number of individual stakeholders holding ownership stakes on the
+      cap table. Primary cost driver across all equity plans.
+    unit: stakeholders
+    notes: Stakeholders above the plan limit may trigger plan upgrade. Angel investors
+      at $50k or less count as 0.5 stakeholders.
+
+  - name: Plan Tier
+    description: Feature requirements (409A, ASC 718 reporting, HRIS integrations,
+      managed administration) drive plan selection and cost.
+
+  - name: Token vs Equity
+    description: Token cap table and distribution plans are priced separately from
+      equity plans. Companies managing both equity and tokens may require subscriptions
+      to multiple product lines.
+
+  - name: Valuation Frequency
+    description: Companies requiring periodic 409A valuations (typically annually
+      or at each funding round) incur per-engagement costs unless bundled.
+
+optimizationOpportunities:
+  - name: Bundle Valuation with Equity Plan
+    description: Purchase 409A valuation service alongside an equity plan to receive
+      a 15% discount on valuation cost.
+    estimatedSavings: 15% on valuation fees
+
+  - name: Right-size Stakeholder Count
+    description: Monitor stakeholder count versus plan limits to avoid over-provisioning.
+      Consider whether angel investors qualify for half-stakeholder counting.
+
+  - name: Annual Commitment
+    description: All Pulley plans are annual subscriptions; there is no monthly
+      billing option. Commit annually for predictable FinOps budgeting.
+
+  - name: Enterprise Negotiation
+    description: Enterprise customers with complex equity programs and high stakeholder
+      counts should negotiate custom pricing to optimize per-stakeholder cost.
