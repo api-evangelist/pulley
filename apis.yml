@@ -44,6 +44,10 @@ apis:
       - type: Website
         url: https://pulley.com/
 common:
+  - type: TrustCenter
+    url: security/pulley-trust-center.yml
+  - type: DomainSecurity
+    url: security/pulley-domain-security.yml
   - type: Website
     url: https://pulley.com/
   - type: Documentation
