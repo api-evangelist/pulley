@@ -6,6 +6,17 @@ description: Cap table management platform for startups and finance leaders, pro
   Pulley supports both equity and token cap tables with integrations to leading HRIS
   platforms, custodians, and legal tools.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
