@@ -40,6 +40,16 @@ tags:
   - Startups
   - Options
   - RSUs
+  - SAFe
+  - 409A Valuations
+  - Token Cap Table
+  - Fintech
+tags_raw:
+  - Cap Table
+  - Equity Management
+  - Startups
+  - Options
+  - RSUs
   - SAFEs
   - 409A Valuations
   - Token Cap Table
@@ -55,6 +65,13 @@ apis:
     humanURL: https://pulley.com/
     baseURL: https://api.pulley.com
     tags:
+      - Cap Table
+      - Equity
+      - Options
+      - RSUs
+      - Vesting
+      - Investor
+    tags_raw:
       - Cap Table
       - Equity
       - Options
