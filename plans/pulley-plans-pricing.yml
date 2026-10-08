@@ -98,3 +98,46 @@ plans:
       - 2-3 day turnaround
       - Audit-ready reports
       - 15% bundle discount available when combined with equity plans
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Startup
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Growth
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Token Cap Table
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Distributions
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Valuations
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
